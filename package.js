@@ -1,8 +1,11 @@
 Package.describe({
-  summary: "Provides bootstrap with readable theme."
+  summary: "Provides bootstrap with readable theme.",
+  version: "0.0.2",
+  git: "https://github.com/andruschka/meteor-bootstrap-readable.git"
 });
 
 Package.on_use(function (api) {
+  api.versionsFrom("METEOR@0.9.0");
   api.use('jquery');
 
   var path = Npm.require('path');
